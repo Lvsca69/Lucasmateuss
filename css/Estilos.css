@@ -1,10 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background:lightgray;
-    font-family:Arial; 
+    background-size: auto 100vh;
+    font-family:Arial;
+    font-size: 20px;
+    height: 100vh;
   }
-  
+  /*se a tela for 400px (mobile)*/ 
+  @media(min-width:400px){
+    body{
+      font-size: 14px;
+    }
+  }
+  @media(min-width:320px){
+    body{
+      font-size: 10px;
+    }
+  }
+  header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
   .menu{
-    background-color:lightgray;
+    background-color:white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
   }
   .menu li{
     list-style:none;
@@ -29,4 +61,7 @@ body{
   .sub-titulo{
    font-style: italic;
   }
-  
+  .img-portfolio{
+    height: 190px;
+    width: 190px;
+  }
