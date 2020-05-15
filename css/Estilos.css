@@ -5,63 +5,195 @@
 }
 
 body{
-    background:lightgray;
-    background-size: auto 100vh;
-    font-family:Arial;
-    font-size: 20px;
-    height: 100vh;
+   background:lightgray;
+   background-size: auto 100vh;
+   font-family: 'Source Code Pro', monospace;
+   height: 100vh; 
   }
-  /*se a tela for 400px (mobile)*/ 
-  @media(min-width:400px){
+  
+  @media(min-width: 400px){
     body{
       font-size: 14px;
     }
   }
-  @media(min-width:320px){
+
+  @media(min-width: 600px) {
     body{
-      font-size: 10px;
+      font-size: 18px;
     }
   }
+  
+  @media(min-width: 1200px){
+    body{
+      font-size: 20px;
+    }
+  }
+ 
+  @media(min-width: 1500px){
+    body{
+      font-size: 22px;
+    }
+  }
+  
   header{
+    align-items: center;
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
   }
+  
   .menu{
     background-color:white;
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
+ 
   .menu a{
     display: block;
     padding: 10px 20px;
+    transition: background-color 2s ,color 2s;
+  }
+  .menu a:active,
+  .menu a:hover{
+    background-color: black;
+    color: white;
   }
   .menu li{
     list-style:none;
   }
+ 
   .menu ul{
     display:flex;
     justify-content:space-around;
     
   }
+ 
   a{
     color:black;
     text-decoration: none;
   }
+ 
   a:hover{
     text-decoration: underline;
-  }
-  .sub-titulo,
+  } 
+
   .titulo-site{
     color: black;
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
   }
+  
   .sub-titulo{
-   font-style: italic;
+   font-family: 'Indie Flower', cursive;
+   font-size: 2em;
+   text-align: center;
   }
+  .sobre,
+  .contato,
+  .portfolio{
+    padding: 2em;
+    min-height: 100vh;
+  }
+
+  @media(min-width:1200px) {
+    .container{
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sobre h2,
+  .contato h2,
+  .portfolio h2{
+    font-family: 'Indie Flower', cursive;
+    margin-bottom: 2em;
+    font-size: 2em;
+  }
+
+  .sobre p{
+    text-indent: 2em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+  }
+  .sobre a{
+  text-decoration: underline;
+  }
+  .sobre a:hover{
+  text-decoration: none;
+  }
+  .sobre .foto{
+  float: right;
+  margin-left: 2em;
+  }
+  .sobre .foto img{
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  .portfolio .grid{
+    display: grid;
+    gap: 1em; 
+  }
+  
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
+    }
+  }
+  
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 8em - 48px);
+    }
+  }
+  
+  .portfolio figure{
+    text-align: center;
+  }
+ 
   .img-portfolio{
     height: 190px;
-    width: 190px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
   }
+  .img-portfolio:hover{
+    transform: scale(1.2);
+  }
+  
+  .contato .icons{
+    text-align:center;
+  }
+  .contato a{
+    font-size: 5em;
+    transition: text-shadow 1s;
+  }
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+  }
+  .twitter:active,
+  .twitter :hover{
+  text-shadow:0px 0px 10px rgba(0, 172, 238, 1);
+  transition: text-shadow 1s;
+  }
+  
+  .instagram:active,
+  .instagram :hover{
+  text-shadow: 0px 0px 15px rgba(131, 58, 180, 1);
+  transition: text-shadow 1s;
+  }
+  .github:active,
+  .github :hover{
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    transition: text-shadow 1s;
+    }
+
+    

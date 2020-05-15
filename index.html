@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Mateus</title>
     <link rel="stylesheet" href="css/Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f1bf2b2c1a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Portfolio</a></li>
+            <ul class="container">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
         <div>
@@ -22,26 +25,76 @@
             <h2 class="sub-titulo">jr.progamador</h2>
         </div>
     </header>
-   
-    <section>
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="foto">
+            <img src="https://pbs.twimg.com/profile_images/1153015398914244609/YXMSdYa7_400x400.jpg" alt="Lucas Mateus">
+        </figure>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eius obcaecati in aliquam necessitatibus fuga
+            suscipit rem dolorem labore! Doloribus non veritatis alias exercitationem sed est aspernatur molestias quas
+            et.
+        </p>
+
+        <p>
+            Repellendus modi harum sint non laborum excepturi, quae neque voluptas ipsam, delectus nihil inventore fuga
+            provident nam a ab architecto optio fugit. Perspiciatis eveniet error excepturi maiores veniam officiis
+            corporis.
+        </p>
+
+        <p>
+            Iusto quibusdam libero corrupti expedita quasi corporis aut natus aliquam quaerat, omnis non impedit
+            voluptatibus blanditiis facilis, voluptate dignissimos officiis molestias in possimus! Fugiat modi sed ex
+            dolores perferendis maiores.
+        </p>
+
+        <p>
+            Este site foi feito durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da alura</a>
+        </p>
+
+    </section>
+
+    <section class="portfolio container" id="portfolio">
         <h2>Portfólio</h2>
-        <figure>
-            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-            <figcaption>eCommerce</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-            <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-            <figcaption>Web design</figcaption>
-        </figure>
-        <figure>
-            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-                alt="Projetos pessoais">
-            <figcaption>Projetos pessoais</figcaption>
-        </figure>
+        <div class="grid">
+            <figure>
+                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+                    alt="eCommerce">
+                <figcaption>eCommerce</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                <figcaption>Mobile</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+                <figcaption>Web design</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                    alt="Projetos pessoais">
+                <figcaption>Projetos pessoais</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="contato container" id="contato">
+        <h2>Contato</h2>
+        <div class="grid icons">
+            <a class="github" target="_blank" href="https://github.com/Lvsca69">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a class="twitter" target="_blank" href="https://twitter.com/Luscaa669">
+                <i class="fab fa-twitter"></i>
+            </a>
+            
+            <a class="instagram" target="_blank" href="https://www.instagram.com/lvscaa">
+                <i class="fab fa-instagram"></i>
+            </a>
+        
+        </div>
+    
     </section>
 </body>
 
